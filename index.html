@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Timeless Tales by Som Ruge</title>
+<meta name="description" content="Short animated moral stories by Som Ruge, in English, ಕನ್ನಡ and తెలుగు.">
+<meta property="og:type" content="video.other">
+<meta property="og:site_name" content="Timeless Tales">
+<meta property="og:title" content="Timeless Tales by Som Ruge">
+<meta property="og:description" content="Short animated moral stories by Som Ruge, in English, ಕನ್ನಡ and తెలుగు.">
+
+<meta property="og:image" content="https://somruge.github.io/timeless-tales/the-snake-who-forgot-to-hiss/en.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="720">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0e1222">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Serif:wght@400;600&family=Noto+Serif+Kannada:wght@400;600&family=Noto+Serif+Telugu:wght@400;600&display=swap">
+<style>
+:root{--night:#0e1222;--panel:#161b30;--line:#2a3150;--brass:#e7bf74;--ink:#f4ead6;--muted:#a9a6b8;--display:"Cormorant Garamond",Georgia,serif;--body:"Noto Serif","Noto Serif Kannada","Noto Serif Telugu",Georgia,"Nirmala UI",serif;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{background:var(--night);color:var(--ink);margin:0}
+body{font-family:var(--body);font-size:16px;line-height:1.6;padding:20px max(16px,env(safe-area-inset-right)) 40px max(16px,env(safe-area-inset-left))}
+[lang=kn]{font-family:"Noto Serif Kannada","Nirmala UI",var(--body)}
+[lang=te]{font-family:"Noto Serif Telugu","Nirmala UI",var(--body)}
+.wrap{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+.brand{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;text-decoration:none}
+.brand b{font-family:var(--display);font-weight:600;font-size:1.35rem;color:var(--brass)}
+.brand span{font-size:.8rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.label{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.langs{display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:8px}
+.langs a{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:52px;padding:8px 6px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font-size:1.05rem;font-weight:600;text-decoration:none}
+.langs a:hover{border-color:var(--brass)}
+.langs a[aria-current=page]{background:var(--brass);border-color:var(--brass);color:var(--night)}
+.langs small{font-size:.7rem;font-weight:400;opacity:.75;font-family:"Noto Serif",Georgia,serif}
+a:focus-visible,button:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+.player{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#000;aspect-ratio:16/9;max-width:100%}
+.player button{all:unset;cursor:pointer;position:absolute;inset:0;display:grid;place-items:center}
+.player img,.player iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
+.play{position:relative;width:76px;height:76px;border-radius:50%;background:rgba(14,18,34,.72);border:2px solid var(--brass);display:grid;place-items:center}
+.play::after{content:"";margin-left:6px;border-style:solid;border-width:14px 0 14px 22px;border-color:transparent transparent transparent var(--brass)}
+h1{font-size:1.7rem;line-height:1.25;margin:0;font-weight:600;text-wrap:balance}
+h1:lang(en){font-family:var(--display);font-size:2.1rem}
+.story{display:flex;flex-direction:column;gap:16px}
+.hook{margin:0;opacity:.92}
+.moral{margin:0;padding:18px 20px;border-radius:14px;background:var(--panel);border:1px solid var(--line);font-size:1.12rem;color:var(--brass)}
+.ask{margin:0;color:var(--muted);font-size:.95rem}
+.moral .detail{display:block;margin-top:10px;font-size:.95rem;color:var(--ink);opacity:.85}
+.btn{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border-radius:999px;border:1px solid var(--brass);color:var(--brass);text-decoration:none;font-family:"Noto Serif",Georgia,serif;font-weight:600;font-size:.95rem;width:fit-content}
+.btn:hover{background:var(--brass);color:var(--night)}
+.credit{font-family:var(--display);font-style:italic;font-size:1.15rem;color:var(--muted);margin:0}
+.cards{display:flex;flex-direction:column;gap:16px}
+.card{display:flex;flex-direction:column;gap:12px;padding:14px 14px 18px;border-radius:16px;background:var(--panel);border:1px solid var(--line);transition:border-color .2s}
+.card:hover{border-color:var(--brass)}
+.card img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:10px;display:block}
+.card h2{margin:0;font-family:var(--display);font-size:1.5rem;font-weight:600}
+.langs .soon{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:52px;padding:8px 6px;border-radius:12px;border:1px dashed var(--line);color:var(--muted);font-size:1.05rem;font-weight:600;opacity:.6;cursor:default}
+.card .line{margin:0;color:var(--brass);font-size:1rem}
+.intro{margin:0;color:var(--muted);max-width:56ch}
+.filter{display:flex;flex-wrap:wrap;gap:8px}
+.filter button{font:inherit;font-size:.95rem;min-height:40px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+.filter button[aria-pressed=true]{background:var(--brass);border-color:var(--brass);color:var(--night)}
+.wrap.wide{max-width:1040px}
+.hero{display:flex;flex-direction:column;gap:10px;padding:8px 0 4px}
+.hero h1{font-family:var(--display);font-size:clamp(2.4rem,7vw,3.4rem);line-height:1.05;color:var(--ink)}
+.card h2{line-height:1.2}
+.card .langs{display:flex;flex-wrap:wrap;gap:8px}
+.card .langs a,.card .langs .soon{flex-direction:row;gap:6px;min-height:36px;padding:0 14px;border-radius:999px;font-size:.95rem}
+.card .langs small{font-size:.72rem}
+.card .langs a small{display:none}
+@media (min-width:760px){.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+</head>
+<body>
+<main class="wrap wide">
+<header class="hero">
+<span class="label">Animated stories by Som Ruge</span>
+<h1>Timeless Tales</h1>
+<p class="intro">Short animated moral stories by Som Ruge: old wisdom and new tales, each with one idea worth keeping. Watch in English, ಕನ್ನಡ or తెలుగు.</p>
+</header>
+<div class="filter" role="group" aria-label="Show stories in"><button type="button" data-f="" aria-pressed="true">All</button><button type="button" data-f="en" aria-pressed="false" lang="en">English</button><button type="button" data-f="kn" aria-pressed="false" lang="kn">ಕನ್ನಡ</button><button type="button" data-f="te" aria-pressed="false" lang="te">తెలుగు</button></div>
+<div class="cards">
+<section class="card" data-langs="en">
+<a href="the-snake-who-forgot-to-hiss/" aria-label="The Snake Who Forgot to Hiss"><img src="the-snake-who-forgot-to-hiss/en.jpg" alt="" width="1280" height="720" loading="lazy"></a>
+<h2 lang="en"><a href="the-snake-who-forgot-to-hiss/" style="color:inherit;text-decoration:none">The Snake Who Forgot to Hiss</a></h2>
+<p class="line" lang="en">Kindness is not weakness.</p>
+<nav class="langs" aria-label="Choose a language"><a href="the-snake-who-forgot-to-hiss/en/" lang="en" data-lang="en">English<small>English</small></a><span class="soon" lang="kn" aria-disabled="true" title="Kannada: coming soon">ಕನ್ನಡ<small>Coming soon</small></span><span class="soon" lang="te" aria-disabled="true" title="Telugu: coming soon">తెలుగు<small>Coming soon</small></span></nav>
+</section>
+<section class="card" data-langs="en kn te">
+<a href="the-drawer-of-broken-clocks/" aria-label="The Drawer of Broken Clocks"><img src="the-drawer-of-broken-clocks/en.jpg" alt="" width="1280" height="720" loading="lazy"></a>
+<h2 lang="en"><a href="the-drawer-of-broken-clocks/" style="color:inherit;text-decoration:none">The Drawer of Broken Clocks</a></h2>
+<p class="line" lang="en">Your broken clocks don’t measure your failures. They measure the courage it took to keep trying. Your time is still coming.</p>
+<nav class="langs" aria-label="Choose a language"><a href="the-drawer-of-broken-clocks/en/" lang="en" data-lang="en">English<small>English</small></a><a href="the-drawer-of-broken-clocks/kn/" lang="kn" data-lang="kn">ಕನ್ನಡ<small>Kannada</small></a><a href="the-drawer-of-broken-clocks/te/" lang="te" data-lang="te">తెలుగు<small>Telugu</small></a></nav>
+</section>
+<section class="card" data-langs="en">
+<a href="the-lantern-that-kept-burning/" aria-label="The Lantern That Kept Burning"><img src="the-lantern-that-kept-burning/en.jpg" alt="" width="1280" height="720" loading="lazy"></a>
+<h2 lang="en"><a href="the-lantern-that-kept-burning/" style="color:inherit;text-decoration:none">The Lantern That Kept Burning</a></h2>
+<p class="line" lang="en">Even a small light, faithfully kept, can guide someone home.</p>
+<nav class="langs" aria-label="Choose a language"><a href="the-lantern-that-kept-burning/en/" lang="en" data-lang="en">English<small>English</small></a></nav>
+</section>
+</div>
+<a class="btn" href="https://www.youtube.com/@MahaPrabhaGurukul" target="_blank" rel="noopener">YouTube channel ↗</a>
+<p class="credit">Created by Som Ruge</p>
+</main>
+<script>
+document.querySelectorAll('.filter button').forEach(function(b){b.addEventListener('click',function(){
+  var f=b.dataset.f;document.querySelectorAll('.filter button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});
+  document.querySelectorAll('.card').forEach(function(c){c.hidden=!!f&&c.dataset.langs.split(' ').indexOf(f)<0});
+  try{if(f)localStorage.setItem('tt-lang',f)}catch(e){}
+})});
+</script>
+<script>document.querySelectorAll('.langs a').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('tt-lang',a.dataset.lang)}catch(e){}})})</script>
+</body>
+</html>
